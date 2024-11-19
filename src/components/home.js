@@ -10,7 +10,8 @@ const navigate = useNavigate();
   };
 
     const handleButtonClick2 = () => {
-        window.open("/Copy of TannerOwensResume.pdf");
+        window.open(`${process.env.PUBLIC_URL}/Copy of TannerOwensResume.pdf`);
+
   };
 
   return (
@@ -27,7 +28,7 @@ const navigate = useNavigate();
       }}
     >
       <img
-        src="/IMG_0076.jpeg"
+        src={`${process.env.PUBLIC_URL}/IMG_0076.jpeg`}
         alt="Rectangle"
         style={{
           position: "absolute",
